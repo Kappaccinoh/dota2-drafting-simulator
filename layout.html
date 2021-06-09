@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <link rel="stylesheet" href="/static/styles.css">
+        <link rel="icon" href="/static/dota2.ico">
+        <title>Drafting Simulator {% block title %}{% endblock %}</title>
+
+    </head>
+
+    <body>
+
+        <div class="navbar">
+            <a class="logo" href="/">
+                <img class="logo__image" src="/static/dota2.ico" alt="dota logo">
+            </a>
+
+
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/hero_pool">Hero Pool</a></li>
+                </ul>
+            </nav>
+
+            <a class="captains__mode__button" href="/captains_mode"><button>Captains Mode</button></a>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="bg__video__container">
+            <video autoplay preload="auto" loop playsinline>
+                <source type="video/mp4" src="/videos/bg_video1.mp4">
+                <source type="video/mp4" src="/videos/bg_video2.mp4">
+            </video>
+        </div>
+
+
+
+
+
+
+
+        <main class="container">
+            {% block main %}{% endblock %}
+        </main>
+
+        <div class="footer">
+
+        </div>
+
+    </body>
+</html>
